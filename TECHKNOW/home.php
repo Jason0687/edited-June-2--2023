@@ -2,10 +2,10 @@
 session_start();
 
 if (isset($_SESSION['id']) && isset($_SESSION['Email'])) {
-
- ?>
-
-
+	$id = $_SESSION['id'];
+	$email = $_SESSION['Email'];
+}
+?>
 
 
 <!DOCTYPE html>
@@ -1117,14 +1117,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['Email'])) {
 		<script src="js/main.js"></script>
 		<script src="js/java.js"></script>
 		<script src="js/popuplogin.js"></script>
-		<script src="js/login.js"></script>
 
 	</body>
 </html>
 
-<?php 
-}else{
-     header("Location: index.php");
-     exit();
-}
- ?>

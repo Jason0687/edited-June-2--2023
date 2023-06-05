@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -67,19 +70,12 @@
 							<button type='button'onclick='login()'class='toggle-btn'>Log In</button>
 							<button type='button'onclick='register()'class='toggle-btn'>Register</button>
 						</div>
-						<form id='login' class='input-group-login' action="login_form.php" method="POST" >
+						<form id='login' class='input-group-login' action="login_form.php" method="POST">
 						<?php if (isset($_GET['error'])) { ?>
      					<p class="error"><?php echo $_GET['error']; ?></p>
      					<?php } ?>
-							
-							<div>
 								<input type='text' class='input-field' name="email" id="email" placeholder='Email'>
-								<div class="error"></div>
-							</div>
-							<div>
 								<input type='password' class='input-field' name="password" id="password" placeholder='Password'>
-								<div class="error"></div>
-							</div>
 							<input type='checkbox' class='check-box'><span>Remember Password</span>
 							<button type='submit' class='submit-btn'>Log in</button>
 						</form>
@@ -1149,7 +1145,5 @@
 		<script src="js/main.js"></script>
 		<script src="js/java.js"></script>
 		<script src="js/popuplogin.js"></script>
-		<script src="js/login.js"></script>
-
 	</body>
 </html>
